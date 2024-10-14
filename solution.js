@@ -88,7 +88,7 @@ let postsData = [
     });
   }
 
-  // Function to handle post liking
+  
   function likePost(postId) {
     const post = postsData.find(post => post.id === postId);
     if (post) {
@@ -97,7 +97,7 @@ let postsData = [
     }
   }
   
-  // Function to handle adding a comment
+ 
   function addComment(postId, comment) {
     const post = postsData.find(post => post.id === postId);
     if (post) {
@@ -106,7 +106,7 @@ let postsData = [
     }
   }
   
-    // Function to handle post submission
+  
 
     function submitPost(event) {
         event.preventDefault();
@@ -136,9 +136,9 @@ let postsData = [
         imageInput.value = '';
         renderPosts();
       }
-  // Event listeners
+ 
   document.getElementById('postForm').addEventListener('submit', submitPost);
   
-  // Initial rendering                      
+                      
   renderPosts();
   
